@@ -1,0 +1,16 @@
+language: node_js
+
+# test on two node.js versions: 0.6 and 0.8
+node_js:
+  - 0.6
+  - 0.8
+
+branches:
+  only:
+    # This is where pull requests from "bors r+" are built.
+    - staging
+    # This is where pull requests from "bors try" are built.
+    - trying
+    # Uncomment this to enable building pull requests.
+    - master
+
